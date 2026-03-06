@@ -3,7 +3,7 @@ title: "Tutorial: Approach to the Breathless Patient"
 description: A structured learning guide for evaluating dyspnoea in adults using the ABCDE approach
 author: Dr A. Mokoena
 editor: Dr S. Pillay
-date: 2025-11-14
+date: 2026-11-14
 version: 2
 status: approved
 tags:
