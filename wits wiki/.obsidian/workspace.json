@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "b24790e3c4d5fd63",
+    "id": "a622ab807be323e0",
     "type": "split",
     "children": [
       {
-        "id": "2a8de39a482d9127",
+        "id": "f27aea463ac28a59",
         "type": "tabs",
         "children": [
           {
-            "id": "3016ed524841de4c",
+            "id": "9463df76b45889b0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Welcome"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "64c029cb3e2c2faa",
+    "id": "0b3976ddcf2aaa89",
     "type": "split",
     "children": [
       {
-        "id": "1d3ef0cb41935eb9",
+        "id": "4fe15b1b01a9197f",
         "type": "tabs",
         "children": [
           {
-            "id": "3b30d808d8ffed54",
+            "id": "58a5b934f79b442a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,16 +48,16 @@
             }
           },
           {
-            "id": "73235f0f570aa3ae",
+            "id": "c0b77300bd034982",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": true,
+                "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "190576b84cdf3b62",
+            "id": "e057e6630f1cf581",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "5bc676d8e4358a1e",
+    "id": "3a7214e5750ddf6f",
     "type": "split",
     "children": [
       {
-        "id": "c146906fc79ea11f",
+        "id": "0fe3b41543a797ff",
         "type": "tabs",
         "children": [
           {
-            "id": "8a382a5583226b8d",
+            "id": "64a13ded54373c20",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Welcome"
             }
           },
           {
-            "id": "b6d8fa3d3cf1a35d",
+            "id": "87121fcf3ec22138",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Welcome"
             }
           },
           {
-            "id": "6b1d86f675de3e13",
+            "id": "ab936bf7130ef5bc",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +137,7 @@
             }
           },
           {
-            "id": "f8741696c0ab7b85",
+            "id": "9a0ba7954833158d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,17 +151,18 @@
             }
           },
           {
-            "id": "fed074dd5ccd6aae",
+            "id": "c50fb3aca8287de7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Welcome.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Welcome"
             }
           }
         ]
@@ -176,22 +183,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "3b30d808d8ffed54",
+  "active": "9463df76b45889b0",
   "lastOpenFiles": [
-    "ophthalmology/competencies.md",
-    "ent/competencies.md",
-    "urology/competencies.md",
-    "orthopaedics/competencies.md",
-    "psychiatry/competencies.md",
-    "obstetrics-gynaecology/competencies.md",
-    "emergency/competencies.md",
-    "paediatrics/competencies.md",
-    "surgery/competencies.md",
-    "internal-medicine/competencies.md",
-    "internal-medicine/tutorial-breathless-patient.md",
-    "internal-medicine/ref-fluid-prescribing.md",
-    "internal-medicine/explanation-heart-failure.md",
-    "2025-01-01.md",
-    "emergency/howto-chest-drain.md"
+    "Welcome.md"
   ]
 }
