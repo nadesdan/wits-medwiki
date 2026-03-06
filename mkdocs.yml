@@ -1,10 +1,10 @@
 site_name: Wits MedWiki
 site_description: Clinical knowledge base for Wits medical students, interns, and junior doctors
 site_author: Wits Faculty of Health Sciences
-site_url: https://nadesdan.github.io/wits-medwiki/
+site_url: https://your-username.github.io/wits-medwiki/
 
 repo_name: wits-medwiki
-repo_url: https://github.com/nadesdan/wits-medwiki
+repo_url: https://github.com/your-username/wits-medwiki
 edit_uri: edit/main/docs/
 
 copyright: >
@@ -13,6 +13,7 @@ copyright: >
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.png
   font:
@@ -35,10 +36,10 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.footer
+    - navigation.prune
     - search.suggest
     - search.highlight
     - search.share
@@ -129,6 +130,7 @@ nav:
   - Departments:
     - Internal Medicine:
       - Overview: internal-medicine/index.md
+      - Competencies: internal-medicine/competencies.md
       - Tutorials:
         - Approach to the Breathless Patient: internal-medicine/tutorial-breathless-patient.md
       - How-To Guides:
@@ -140,6 +142,7 @@ nav:
         - Understanding Heart Failure Pathophysiology: internal-medicine/explanation-heart-failure.md
     - Surgery:
       - Overview: surgery/index.md
+      - Competencies: surgery/competencies.md
       - How-To Guides:
         - How to Perform a Surgical Scrub: surgery/howto-surgical-scrub.md
         - How to Suture a Wound: surgery/howto-suturing.md
@@ -147,6 +150,7 @@ nav:
         - Wits Surgical Antibiotic Prophylaxis: surgery/ref-antibiotic-prophylaxis.md
     - Paediatrics:
       - Overview: paediatrics/index.md
+      - Competencies: paediatrics/competencies.md
       - Tutorials:
         - Neonatal Resuscitation: paediatrics/tutorial-neonatal-resus.md
       - Explanations:
@@ -155,6 +159,7 @@ nav:
         - Paediatric Drug Dosing Quick Reference: paediatrics/ref-drug-dosing.md
     - Emergency Medicine & Trauma:
       - Overview: emergency/index.md
+      - Competencies: emergency/competencies.md
       - How-To Guides:
         - RSI — Rapid Sequence Intubation: emergency/howto-rsi.md
         - Emergency Chest Drain Insertion: emergency/howto-chest-drain.md
@@ -162,15 +167,21 @@ nav:
         - Wits Trauma Resuscitation Protocol: emergency/ref-trauma-resus.md
     - Obstetrics & Gynaecology:
       - Overview: obstetrics-gynaecology/index.md
+      - Competencies: obstetrics-gynaecology/competencies.md
     - Psychiatry:
       - Overview: psychiatry/index.md
+      - Competencies: psychiatry/competencies.md
     - Orthopaedics:
       - Overview: orthopaedics/index.md
+      - Competencies: orthopaedics/competencies.md
     - Urology:
       - Overview: urology/index.md
+      - Competencies: urology/competencies.md
     - ENT:
       - Overview: ent/index.md
+      - Competencies: ent/competencies.md
     - Ophthalmology:
       - Overview: ophthalmology/index.md
+      - Competencies: ophthalmology/competencies.md
   - Tags: tags.md
   - Contributing: contributing.md
