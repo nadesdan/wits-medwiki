@@ -1,0 +1,315 @@
+/* ═══════════════════════════════════════════════════════════════
+   Wits MedWiki — Custom Styles
+   Diataxis colour system + Wits branding
+═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ── Brand colours ── */
+:root {
+  --md-primary-fg-color:        #0A2342;
+  --md-primary-fg-color--light: #1565C0;
+  --md-primary-fg-color--dark:  #061628;
+  --md-primary-bg-color:        #ffffff;
+  --md-accent-fg-color:         #1565C0;
+
+  /* Diataxis colours */
+  --dt-tutorial-bg:     #E8F5E9;
+  --dt-tutorial-border: #43A047;
+  --dt-tutorial-text:   #1B5E20;
+
+  --dt-howto-bg:        #E3F2FD;
+  --dt-howto-border:    #1E88E5;
+  --dt-howto-text:      #0D47A1;
+
+  --dt-reference-bg:    #FFF3E0;
+  --dt-reference-border:#FB8C00;
+  --dt-reference-text:  #E65100;
+
+  --dt-explanation-bg:  #F3E5F5;
+  --dt-explanation-border:#8E24AA;
+  --dt-explanation-text: #4A148C;
+
+  /* Wits navy */
+  --wits-navy: #0A2342;
+}
+
+/* ── Typography ── */
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif !important;
+}
+
+.md-typeset h1, .md-typeset h2 {
+  font-family: 'Libre Baskerville', Georgia, serif !important;
+  font-weight: 700;
+  color: var(--wits-navy);
+}
+
+.md-typeset code, .md-typeset pre {
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+/* ── Header ── */
+.md-header {
+  background-color: var(--wits-navy) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25) !important;
+}
+
+.md-tabs {
+  background-color: #0d2d52 !important;
+}
+
+/* ── Diataxis page type banners ──────────────────────────────── */
+/* Applied via page metadata: 
+   add `type: tutorial` etc. to frontmatter, 
+   or use the CSS classes directly in markdown */
+
+/* Tutorial pages */
+.tutorial-header,
+[data-md-type="tutorial"] .md-content article > h1:first-child::before {
+  content: "🎓 Tutorial — Learning-oriented";
+  display: block;
+  background: var(--dt-tutorial-bg);
+  border-left: 4px solid var(--dt-tutorial-border);
+  color: var(--dt-tutorial-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 0.5rem;
+}
+
+/* How-To pages */
+.howto-header,
+[data-md-type="howto"] .md-content article > h1:first-child::before {
+  content: "🔧 How-To Guide — Task-oriented";
+  display: block;
+  background: var(--dt-howto-bg);
+  border-left: 4px solid var(--dt-howto-border);
+  color: var(--dt-howto-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Reference pages */
+.reference-header,
+[data-md-type="reference"] .md-content article > h1:first-child::before {
+  content: "📖 Reference — Information-oriented";
+  display: block;
+  background: var(--dt-reference-bg);
+  border-left: 4px solid var(--dt-reference-border);
+  color: var(--dt-reference-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Explanation pages */
+.explanation-header,
+[data-md-type="explanation"] .md-content article > h1:first-child::before {
+  content: "💡 Explanation — Understanding-oriented";
+  display: block;
+  background: var(--dt-explanation-bg);
+  border-left: 4px solid var(--dt-explanation-border);
+  color: var(--dt-explanation-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Diataxis admonition types ────────────────────────────────── */
+/* Use these in articles: 
+   !!! tutorial "Title"  
+   !!! howto "Title" etc. */
+
+.md-typeset .admonition.tutorial,
+.md-typeset details.tutorial {
+  border-color: var(--dt-tutorial-border) !important;
+}
+.md-typeset .tutorial > .admonition-title,
+.md-typeset .tutorial > summary {
+  background-color: var(--dt-tutorial-bg) !important;
+  color: var(--dt-tutorial-text) !important;
+}
+.md-typeset .tutorial > .admonition-title::before {
+  content: "🎓 " !important;
+}
+
+.md-typeset .admonition.howto,
+.md-typeset details.howto {
+  border-color: var(--dt-howto-border) !important;
+}
+.md-typeset .howto > .admonition-title,
+.md-typeset .howto > summary {
+  background-color: var(--dt-howto-bg) !important;
+  color: var(--dt-howto-text) !important;
+}
+.md-typeset .howto > .admonition-title::before {
+  content: "🔧 " !important;
+}
+
+.md-typeset .admonition.reference-note,
+.md-typeset details.reference-note {
+  border-color: var(--dt-reference-border) !important;
+}
+.md-typeset .reference-note > .admonition-title,
+.md-typeset .reference-note > summary {
+  background-color: var(--dt-reference-bg) !important;
+  color: var(--dt-reference-text) !important;
+}
+
+.md-typeset .admonition.wits-protocol {
+  border-color: #1565C0 !important;
+  border-left-width: 4px;
+}
+.md-typeset .wits-protocol > .admonition-title {
+  background-color: #E3F2FD !important;
+  color: #0A2342 !important;
+}
+.md-typeset .wits-protocol > .admonition-title::before {
+  content: "🏥 " !important;
+}
+
+/* ── Article metadata box ── */
+.article-meta {
+  background: #F8FAFD;
+  border: 1.5px solid #E2EAF4;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.82rem;
+  color: #64748B;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-meta strong {
+  color: #334155;
+}
+
+/* ── Tag pills in content ── */
+.tag-system   { background: #E1F5FE; color: #0277BD; border: 1px solid #0277BD; padding: 0.15rem 0.55rem; border-radius: 12px; font-size: 0.72rem; font-weight: 600; display: inline-block; margin: 0.1rem; }
+.tag-illness  { background: #FCE4EC; color: #AD1457; border: 1px solid #AD1457; padding: 0.15rem 0.55rem; border-radius: 12px; font-size: 0.72rem; font-weight: 600; display: inline-block; margin: 0.1rem; }
+.tag-drug     { background: #E8F5E9; color: #2E7D32; border: 1px solid #2E7D32; padding: 0.15rem 0.55rem; border-radius: 12px; font-size: 0.72rem; font-weight: 600; display: inline-block; margin: 0.1rem; }
+.tag-framework{ background: #F3E5F5; color: #6A1B9A; border: 1px solid #6A1B9A; padding: 0.15rem 0.55rem; border-radius: 12px; font-size: 0.72rem; font-weight: 600; display: inline-block; margin: 0.1rem; }
+
+/* ── Department index cards ── */
+.dept-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.dept-card {
+  background: white;
+  border: 1.5px solid #E2EAF4;
+  border-radius: 10px;
+  padding: 1.1rem;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.18s;
+  display: block;
+}
+
+.dept-card:hover {
+  border-color: #1976D2;
+  box-shadow: 0 4px 16px rgba(21,101,192,0.12);
+  transform: translateY(-2px);
+}
+
+.dept-card-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.dept-card-name { font-weight: 700; font-size: 0.9rem; color: #0A2342; margin-bottom: 0.25rem; }
+.dept-card-desc { font-size: 0.78rem; color: #64748B; }
+
+/* ── Wits protocol banner ── */
+.wits-banner {
+  background: linear-gradient(135deg, #0A2342 0%, #1565C0 100%);
+  color: white;
+  padding: 0.75rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* ── Print styles ── */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer,
+  .md-content__button, [data-md-component="announce"] {
+    display: none !important;
+  }
+
+  .md-main__inner { margin: 0 !important; }
+  .md-content { max-width: 100% !important; }
+
+  body {
+    font-size: 11pt !important;
+    color: #000 !important;
+  }
+
+  .md-typeset h1 { font-size: 20pt !important; color: #0A2342 !important; }
+  .md-typeset h2 { font-size: 14pt !important; color: #0A2342 !important; border-bottom: 1pt solid #ccc; }
+  .md-typeset h3 { font-size: 11pt !important; }
+
+  .md-typeset table { font-size: 9pt !important; }
+
+  /* Print header */
+  .md-content article::before {
+    content: "Wits MedWiki — Faculty of Health Sciences — For educational use only";
+    display: block;
+    font-size: 8pt;
+    color: #999;
+    border-bottom: 1pt solid #ccc;
+    padding-bottom: 6pt;
+    margin-bottom: 12pt;
+  }
+
+  /* Print footer */
+  .md-content article::after {
+    content: "Printed from Wits MedWiki. Verify against current guidelines before clinical application.";
+    display: block;
+    font-size: 8pt;
+    color: #999;
+    border-top: 1pt solid #ccc;
+    padding-top: 6pt;
+    margin-top: 12pt;
+  }
+
+  @page {
+    margin: 2cm;
+    @bottom-center {
+      content: counter(page) " of " counter(pages);
+    }
+  }
+}
+
+/* ── Responsive improvements ── */
+@media screen and (max-width: 600px) {
+  .dept-card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
